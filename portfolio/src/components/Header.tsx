@@ -13,13 +13,27 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 interface Props {
   window?: () => Window;
 }
 
 const drawerWidth = 240;
-const navItems = ["Home", "Works", "Contact"];
+const navItems = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "Works",
+    path: "/works",
+  },
+  {
+    name: "Contact me",
+    path: "/contact",
+  },
+];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -37,9 +51,9 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.name} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -71,9 +85,11 @@ export default function DrawerAppBar(props: Props) {
           ></Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
+              <NavLink to={item.path}>
+                <Button key={item.name} sx={{ color: "#fff" }}>
+                  {item.name}
+                </Button>
+              </NavLink>
             ))}
           </Box>
         </Toolbar>

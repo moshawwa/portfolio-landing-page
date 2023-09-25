@@ -1,5 +1,9 @@
 const Works = () => {
-  return <></>;
+  return (
+    <>
+      <h1>works</h1>
+    </>
+  );
 };
 
 export default Works;
