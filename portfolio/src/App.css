@@ -1,0 +1,36 @@
+body{
+font-family: monospace;
+}
+
+h1{
+    font-family: Heebo;
+font-size: 44px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+}
+nav a{
+    padding: 15px;
+}
+nav ul{
+list-style:none ;
+margin-bottom: 1rem;
+margin-right: 35px;
+margin-top: 10px;
+
+}
+nav ul li{
+    display: inline;
+    text-decoration: none;
+    margin-right: 25px;
+    padding-top: 10px;
+
+}

@@ -1,9 +1,14 @@
 import "./App.css";
+import FeaturdWork from "./components/homepage/FeaturdWork";
+import FrontPage from "./components/homepage/FrontPage";
+import RecentPosts from "./components/homepage/RecentPosts";
 
 function App() {
   return (
     <>
-      <h1>Home page</h1>
+      <FrontPage />
+      <RecentPosts />
+      <FeaturdWork />
     </>
   );
 }
