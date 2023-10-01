@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { BsPersonFill } from "react-icons/bs";
 
 const Header = () => {
@@ -7,37 +7,41 @@ const Header = () => {
       <nav className="navbar bg-body-tertiary">
         <div>
           <a className="navbar-brand" href="#">
-            <BsPersonFill size={32} />
+            <BsPersonFill color="#FF6464" size={32} />
           </a>
         </div>
         <div>
           <ul>
             <li>
-              <Link
+              <NavLink
                 className="text-decoration-none"
                 style={{ color: "black", fontWeight: "bold" }}
                 to="/"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 className="text-decoration-none"
                 style={{ color: "black", fontWeight: "bold" }}
                 to="/works"
               >
                 Works
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className="text-decoration-none"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-decoration-none active"
+                    : "text-decoration-none"
+                }
                 style={{ color: "black", fontWeight: "bold" }}
                 to="/contact"
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
