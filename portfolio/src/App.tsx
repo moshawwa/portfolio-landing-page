@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <FrontPage />
-      <RecentPosts />
-      <FeaturdWork />
+      {/* <RecentPosts />
+      <FeaturdWork /> */}
     </>
   );
 }
