@@ -34,3 +34,9 @@ nav ul li{
     padding-top: 10px;
 
 }
+.container .row ul li {
+    display: inline;
+    padding:  8px;
+    margin-right: 20px;
+    color: #FF6464;
+}

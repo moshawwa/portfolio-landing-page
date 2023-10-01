@@ -13,7 +13,7 @@ const FrontPage = () => {
               science is just about curiosity to find out more. and never to
               stop
             </p>
-            <button className="btn btn-outline-danger">Download Resume</button>
+            <button className="btn btn-danger">Download Resume</button>
           </div>
           <div className="col-5">
             <img

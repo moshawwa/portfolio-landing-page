@@ -4,7 +4,7 @@ import { BsPersonFill } from "react-icons/bs";
 const Header = () => {
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar bg-secondary-color">
         <div>
           <a className="navbar-brand" href="#">
             <BsPersonFill color="#FF6464" size={32} />
