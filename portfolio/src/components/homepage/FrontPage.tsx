@@ -13,7 +13,15 @@ const FrontPage = () => {
               science is just about curiosity to find out more. and never to
               stop
             </p>
-            <button className="btn btn-danger">Download Resume</button>
+            <button className="btn btn-danger">
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="/mo cv.pdf" // Replace with the actual path to your PDF file
+                download="mohammedshawwacv.pdf" // Replace with the desired file name
+              >
+                Download Resume
+              </a>
+            </button>
           </div>
           <div className="col-5">
             <img
