@@ -16,8 +16,8 @@ const FrontPage = () => {
             <button className="btn btn-danger">
               <a
                 style={{ textDecoration: "none", color: "white" }}
-                href="/mo cv.pdf" // Replace with the actual path to your PDF file
-                download="mohammedshawwacv.pdf" // Replace with the desired file name
+                href="/mo cv.pdf"
+                download="mohammedshawwacv.pdf"
               >
                 Download Resume
               </a>
