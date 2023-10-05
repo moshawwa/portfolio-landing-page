@@ -1,4 +1,5 @@
 import { BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Works = () => {
   return (
@@ -20,17 +21,19 @@ const Works = () => {
                   enjoyed. It was built using React, Redux, Asp.net, Express,
                   MongoDB
                 </p>
-                <a
-                  style={{ marginRight: "65px" }}
-                  href="https://book-gallery.vercel.app/"
-                  className="btn btn-primary"
-                >
-                  visit website
-                </a>
 
-                <a href="https://github.com/moshawwa/Book-Gallery">
+                <Link to="https://book-gallery.vercel.app/">
+                  <button
+                    style={{ marginRight: "65px" }}
+                    className="btn btn-primary"
+                  >
+                    visit website
+                  </button>
+                </Link>
+
+                <Link to="https://github.com/moshawwa/Book-Gallery">
                   <BsGithub color="#FF6464" size={32} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
