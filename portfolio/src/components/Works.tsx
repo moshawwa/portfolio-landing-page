@@ -1,10 +1,12 @@
+import { BsGithub } from "react-icons/bs";
+
 const Works = () => {
   return (
     <>
       <div className="container">
         <div className="row">
           <div className="col-7">
-            <div className="card" style={{ width: "18rem" }}>
+            <div className="card" style={{ width: "18rem", marginTop: "20px" }}>
               <img
                 style={{ padding: "15px" }}
                 src="/stack-of-books.png"
@@ -19,10 +21,15 @@ const Works = () => {
                   MongoDB
                 </p>
                 <a
+                  style={{ marginRight: "65px" }}
                   href="https://book-gallery.vercel.app/"
                   className="btn btn-primary"
                 >
                   visit website
+                </a>
+
+                <a href="https://github.com/moshawwa/Book-Gallery">
+                  <BsGithub color="#FF6464" size={32} />
                 </a>
               </div>
             </div>
