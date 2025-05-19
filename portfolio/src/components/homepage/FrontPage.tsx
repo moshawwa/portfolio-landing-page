@@ -16,7 +16,7 @@ const FrontPage = () => {
             <button className="btn btn-danger">
               <a
                 style={{ textDecoration: "none", color: "white" }}
-                href="/mo cv.pdf"
+                href="/MOHAMMED ALSHAWWA CV.pdf"
                 download="mohammedshawwacv.pdf"
               >
                 Download Resume
