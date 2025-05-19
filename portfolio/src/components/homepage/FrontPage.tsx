@@ -16,8 +16,10 @@ const FrontPage = () => {
             <button className="btn btn-danger">
               <a
                 style={{ textDecoration: "none", color: "white" }}
-                href="/MOHAMMEDALSHAWWA CV.pdf"
-                download="mohammedshawwacv.pdf"
+                href="/cv.pdf"
+                download="mohammed_shawwa_cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Download Resume
               </a>
