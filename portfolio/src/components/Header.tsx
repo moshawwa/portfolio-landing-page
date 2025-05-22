@@ -45,7 +45,7 @@ const Header = () => {
           >
             <NavLink className="navbar-brand fw-bold" to="/">
               Mohammed
-            </NavLink>
+              </NavLink>
           </motion.div>
 
           <button
@@ -67,18 +67,18 @@ const Header = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 + index * 0.1 }}
                 >
-                  <NavLink
-                    className={({ isActive }) =>
+              <NavLink
+                className={({ isActive }) =>
                       `nav-link nav-link-custom ${isActive ? 'active' : ''}`
-                    }
+                }
                     to={item.path}
                     style={styles.navLink}
-                  >
+              >
                     {item.label}
-                  </NavLink>
+              </NavLink>
                 </motion.li>
               ))}
-            </ul>
+          </ul>
           </div>
         </div>
       </nav>

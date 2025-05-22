@@ -45,16 +45,16 @@ const FrontPage = () => {
               transition={{ delay: 0.9 }}
             >
               <button className="btn btn-primary btn-lg px-4 py-2 rounded-pill shadow-sm hover-lift">
-                <a
-                  style={{ textDecoration: "none", color: "white" }}
+              <a
+                style={{ textDecoration: "none", color: "white" }}
                   href="/cv.pdf"
                   download="mohammed_shawwa_cv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  Download Resume
-                </a>
-              </button>
+              >
+                Download Resume
+              </a>
+            </button>
             </motion.div>
           </motion.div>
           <motion.div 

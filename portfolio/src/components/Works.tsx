@@ -74,12 +74,12 @@ const Works = () => {
               />
             </div>
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">Book Gallery</h5>
+                <h5 className="card-title">Book Gallery</h5>
               <p className="card-text flex-grow-1">
-                This is a simple gallery of books that I have read and
-                enjoyed. It was built using React, Redux, Asp.net, Express,
-                MongoDB
-              </p>
+                  This is a simple gallery of books that I have read and
+                  enjoyed. It was built using React, Redux, Asp.net, Express,
+                  MongoDB
+                </p>
 
               <div className="mt-auto d-flex align-items-center">
                 <Link to="https://book-gallery.vercel.app/">
@@ -167,9 +167,9 @@ const Works = () => {
                 <Link to="https://github.com/your-username/money-tracker">
                   <BsGithub style={styles.githubIcon} size={32} />
                 </Link>
-              </div>
             </div>
           </div>
+        </div>
         </motion.div>
       </div>
     </div>

@@ -1,36 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-const styles = {
-  socialIconWrapper: {
-    width: '50px',
-    height: '50px',
-    borderRadius: '50%',
-    background: '#f8f9fa',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#212529',
-    transition: 'all 0.3s ease',
-    '&:hover': {
-      background: '#007bff',
-      color: 'white',
-    },
-  },
-  formControl: {
-    border: '2px solid #e9ecef',
-    transition: 'all 0.3s ease',
-    '&:focus': {
-      borderColor: '#007bff',
-      boxShadow: '0 0 0 0.2rem rgba(0, 123, 255, 0.25)',
-    },
-  },
-  primaryButton: {
-    background: 'linear-gradient(45deg, #007bff, #0056b3)',
-    border: 'none',
-  },
-};
-
 const Contacts = () => {
   const socialLinks = [
     {
@@ -101,7 +71,7 @@ const Contacts = () => {
                     id="name"
                     placeholder="Your Name"
                   />
-                </div>
+              </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="form-label">
                     Email
@@ -112,7 +82,7 @@ const Contacts = () => {
                     id="email"
                     placeholder="Your Email"
                   />
-                </div>
+              </div>
                 <div className="mb-4">
                   <label htmlFor="message" className="form-label">
                     Message
@@ -123,17 +93,17 @@ const Contacts = () => {
                     rows={5}
                     placeholder="Your Message"
                   ></textarea>
-                </div>
+            </div>
                 <motion.button
                   className="btn btn-primary btn-lg w-100"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                >
+              >
                   Send Message
                 </motion.button>
               </form>
             </div>
-          </div>
+              </div>
         </motion.div>
 
         <motion.div className="col-md-8 text-center mt-5" variants={itemVariants}>
@@ -148,11 +118,11 @@ const Contacts = () => {
                 className="text-decoration-none"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-              >
+            >
                 <div className="social-icon-wrapper">
                   {link.icon}
                   <span className="visually-hidden">{link.label}</span>
-                </div>
+              </div>
               </motion.a>
             ))}
           </div>
