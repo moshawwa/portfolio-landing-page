@@ -10,13 +10,8 @@ const Footer = () => {
     },
     {
       icon: <FaLinkedin size={24} />,
-      url: "https://linkedin.com/in/your-profile",
+      url: "https://www.linkedin.com/in/mohammed-al-shawwa-b6954923b/",
       label: "LinkedIn",
-    },
-    {
-      icon: <FaTwitter size={24} />,
-      url: "https://twitter.com/your-handle",
-      label: "Twitter",
     },
   ];
 

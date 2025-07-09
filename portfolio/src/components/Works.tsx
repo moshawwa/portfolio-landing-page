@@ -126,7 +126,7 @@ const Works = () => {
                   </button>
                 </Link>
 
-                <Link to="https://github.com/your-username/restaurant-project">
+                <Link to="https://github.com/moshawwa/restaurant-project">
                   <BsGithub style={styles.githubIcon} size={32} />
                 </Link>
               </div>
@@ -164,7 +164,7 @@ const Works = () => {
                   </button>
                 </Link>
 
-                <Link to="https://github.com/your-username/money-tracker">
+                <Link to="https://github.com/moshawwa/money-tracker-app">
                   <BsGithub style={styles.githubIcon} size={32} />
                 </Link>
             </div>
