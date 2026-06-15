@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contacts = () => {
   const socialLinks = [
@@ -10,13 +10,8 @@ const Contacts = () => {
     },
     {
       icon: <FaLinkedin size={24} />,
-      url: "https://linkedin.com/in/your-profile",
+      url: "https://www.linkedin.com/in/mohammed-al-shawwa-b6954923b/",
       label: "LinkedIn",
-    },
-    {
-      icon: <FaTwitter size={24} />,
-      url: "https://twitter.com/your-handle",
-      label: "Twitter",
     },
   ];
 
@@ -71,7 +66,7 @@ const Contacts = () => {
                     id="name"
                     placeholder="Your Name"
                   />
-              </div>
+                </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="form-label">
                     Email
@@ -82,7 +77,7 @@ const Contacts = () => {
                     id="email"
                     placeholder="Your Email"
                   />
-              </div>
+                </div>
                 <div className="mb-4">
                   <label htmlFor="message" className="form-label">
                     Message
@@ -93,20 +88,23 @@ const Contacts = () => {
                     rows={5}
                     placeholder="Your Message"
                   ></textarea>
-            </div>
+                </div>
                 <motion.button
                   className="btn btn-primary btn-lg w-100"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-              >
+                >
                   Send Message
                 </motion.button>
               </form>
             </div>
-              </div>
+          </div>
         </motion.div>
 
-        <motion.div className="col-md-8 text-center mt-5" variants={itemVariants}>
+        <motion.div
+          className="col-md-8 text-center mt-5"
+          variants={itemVariants}
+        >
           <h3 className="mb-4">Connect with me</h3>
           <div className="d-flex justify-content-center gap-4">
             {socialLinks.map((link, index) => (
@@ -118,11 +116,11 @@ const Contacts = () => {
                 className="text-decoration-none"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-            >
+              >
                 <div className="social-icon-wrapper">
                   {link.icon}
                   <span className="visually-hidden">{link.label}</span>
-              </div>
+                </div>
               </motion.a>
             ))}
           </div>
